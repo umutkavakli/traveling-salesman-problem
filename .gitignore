@@ -1,0 +1,11 @@
+# Compiled Java class files
+*.class
+
+# Package Files
+*.jar
+*.zip
+*.tar.gz
+*.rar
+
+# Other
+.idea
