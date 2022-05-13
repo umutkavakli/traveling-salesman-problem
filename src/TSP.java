@@ -9,7 +9,7 @@ public abstract class TSP {
         this.cost = cost;
     }
 
-    protected abstract ArrayList<Integer> bestRoute(int start);
+    protected abstract ArrayList<Integer> bestRoute();
 
     protected abstract void tourStarter(int start);
 

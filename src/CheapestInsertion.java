@@ -2,13 +2,15 @@ import java.util.ArrayList;
 
 public class CheapestInsertion extends TSP implements BestCost {
     int[] visited;
+    int start;
 
-    public CheapestInsertion(int[][] cost) {
+    public CheapestInsertion(int[][] cost, int start) {
         super(cost);
+        this.start = start;
     }
 
     @Override
-    public ArrayList<Integer> bestRoute(int start) {
+    public ArrayList<Integer> bestRoute() {
         visited = new int[cost.length];
 
         tourStarter(start);

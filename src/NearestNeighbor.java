@@ -2,12 +2,14 @@ import java.util.ArrayList;
 
 public class NearestNeighbor extends TSP implements BestNode{
     int[] visited;
-    public NearestNeighbor(int[][] cost){
+    int start;
+    public NearestNeighbor(int[][] cost, int start){
         super(cost);
+        this.start = start;
     }
 
     @Override
-    public ArrayList<Integer> bestRoute(int start){
+    public ArrayList<Integer> bestRoute(){
         visited = new int[cost.length];
         int index, node;
 

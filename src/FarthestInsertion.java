@@ -2,12 +2,14 @@ import java.util.ArrayList;
 
 public class FarthestInsertion extends TSP implements BestCost, BestNode{
     int[] visited;
-    public FarthestInsertion(int[][] cost){
+    int start;
+    public FarthestInsertion(int[][] cost, int start){
         super(cost);
+        this.start = start;
     }
 
     @Override
-    public ArrayList<Integer> bestRoute(int start) {
+    public ArrayList<Integer> bestRoute() {
         int index, node;
         visited = new int[cost.length];
 

@@ -4,12 +4,14 @@ import java.util.Random;
 
 public class ArbitraryInsertion extends TSP implements BestCost, BestNode{
     int[] visited;
-    public ArbitraryInsertion(int[][] cost) {
+    int start;
+    public ArbitraryInsertion(int[][] cost, int start) {
         super(cost);
+        this.start = start;
     }
 
     @Override
-    public ArrayList<Integer> bestRoute(int start) {
+    public ArrayList<Integer> bestRoute() {
         int index, node;
         visited = new int[cost.length];
 

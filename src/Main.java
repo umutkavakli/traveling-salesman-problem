@@ -1,17 +1,19 @@
 public class Main {
     public static void main(String[] args) {
+        
+        int start = 9;
 
-        ArbitraryInsertion arbitraryInsertion = new ArbitraryInsertion(TurkishNetwork.distances);
-        CheapestInsertion cheapestInsertion = new CheapestInsertion(TurkishNetwork.distances);
-        FarthestInsertion farthestInsertion = new FarthestInsertion(TurkishNetwork.distances);
-        NearestInsertion nearestInsertion = new NearestInsertion(TurkishNetwork.distances);
-        NearestNeighbor nearestNeighbor = new NearestNeighbor(TurkishNetwork.distances);
+        ArbitraryInsertion arbitraryInsertion = new ArbitraryInsertion(TurkishNetwork.distances, start);
+        CheapestInsertion cheapestInsertion = new CheapestInsertion(TurkishNetwork.distances, start);
+        FarthestInsertion farthestInsertion = new FarthestInsertion(TurkishNetwork.distances, start);
+        NearestInsertion nearestInsertion = new NearestInsertion(TurkishNetwork.distances, start);
+        NearestNeighbor nearestNeighbor = new NearestNeighbor(TurkishNetwork.distances, start);
 
-        arbitraryInsertion.bestRoute(9);
-        cheapestInsertion.bestRoute(9);
-        farthestInsertion.bestRoute(9);
-        nearestInsertion.bestRoute(9);
-        nearestNeighbor.bestRoute(9);
+        arbitraryInsertion.bestRoute();
+        cheapestInsertion.bestRoute();
+        farthestInsertion.bestRoute();
+        nearestInsertion.bestRoute();
+        nearestNeighbor.bestRoute();
 
         System.out.println(arbitraryInsertion.toString()+"\n"
                 +cheapestInsertion.toString()+"\n"

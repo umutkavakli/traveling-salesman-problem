@@ -3,13 +3,15 @@ import java.util.ArrayList;
 public class NearestInsertion extends TSP implements BestCost, BestNode{
 
     int[] visited;
+    int start;
 
-    public NearestInsertion(int[][] cost){
+    public NearestInsertion(int[][] cost, int start){
         super(cost);
+        this.start = start;
     }
 
     @Override
-    public ArrayList<Integer> bestRoute(int start) {
+    public ArrayList<Integer> bestRoute() {
         int index, node;
         visited = new int[cost.length];
 
