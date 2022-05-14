@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public abstract class TSP {
+    protected int[] visited;
+    protected int start;
     protected ArrayList<Integer> tour = new ArrayList<>();
     protected final int[][] cost;
     protected final String[] cities;

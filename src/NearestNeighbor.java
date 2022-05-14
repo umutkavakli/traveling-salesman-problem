@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class NearestNeighbor extends TSP implements BestNode{
-    private int[] visited;
-    private final int start;
+
     public NearestNeighbor(int[][] cost, String[] cities, int start) {
         super(cost, cities);
         this.start = start;
