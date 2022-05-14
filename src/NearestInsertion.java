@@ -5,8 +5,8 @@ public class NearestInsertion extends TSP implements BestCost, BestNode{
     int[] visited;
     int start;
 
-    public NearestInsertion(int[][] cost, int start){
-        super(cost);
+    public NearestInsertion(int[][] cost, String[] cities, int start) {
+        super(cost, cities);
         this.start = start;
     }
 

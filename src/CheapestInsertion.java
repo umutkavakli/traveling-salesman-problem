@@ -4,8 +4,8 @@ public class CheapestInsertion extends TSP implements BestCost {
     int[] visited;
     int start;
 
-    public CheapestInsertion(int[][] cost, int start) {
-        super(cost);
+    public CheapestInsertion(int[][] cost, String[] cities, int start) {
+        super(cost, cities);
         this.start = start;
     }
 

@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class FarthestInsertion extends TSP implements BestCost, BestNode{
     int[] visited;
     int start;
-    public FarthestInsertion(int[][] cost, int start){
-        super(cost);
+    public FarthestInsertion(int[][] cost, String[] cities, int start) {
+        super(cost, cities);
         this.start = start;
     }
 
