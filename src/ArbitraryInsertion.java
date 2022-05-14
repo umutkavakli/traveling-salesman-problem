@@ -3,8 +3,8 @@ import java.util.Random;
 
 
 public class ArbitraryInsertion extends TSP implements BestCost, BestNode{
-    int[] visited;
-    int start;
+    private int[] visited;
+    private final int start;
     public ArbitraryInsertion(int[][] cost, String[] cities, int start) {
         super(cost, cities);
         this.start = start;

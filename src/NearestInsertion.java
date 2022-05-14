@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class NearestInsertion extends TSP implements BestCost, BestNode{
 
-    int[] visited;
-    int start;
+    private int[] visited;
+    private final int start;
 
     public NearestInsertion(int[][] cost, String[] cities, int start) {
         super(cost, cities);

@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class CheapestInsertion extends TSP implements BestCost {
-    int[] visited;
-    int start;
+    private int[] visited;
+    private final int start;
 
     public CheapestInsertion(int[][] cost, String[] cities, int start) {
         super(cost, cities);
