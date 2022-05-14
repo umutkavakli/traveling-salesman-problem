@@ -32,8 +32,8 @@ public abstract class TSP {
 
     public ArrayList<String> getTourWithCityNames(){
         ArrayList<String> tourCities = new ArrayList<>();
-        for (int i = 0; i < tour.size(); i++){
-            tourCities.add(cities[tour.get(i)]);
+        for (Integer i : tour) {
+            tourCities.add(cities[i]);
         }
         return tourCities;
     }
